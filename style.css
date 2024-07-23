@@ -1,0 +1,212 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --pl-white: hsl(0,0%,100%)
+}
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #360033;  
+  background: linear-gradient(to right, #0b8793, #360033);
+
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  color: var(--pl-white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 2;
+}
+.screen {
+  /* border: 2px solid white; */
+  width: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  border-radius: 20px;
+  padding: 0px 10px 0px 10px;
+  background: #07192d;
+}
+#display{
+  width: 80%;
+  height: 70%;
+  border-radius: 10px;
+  letter-spacing: 3px;
+  padding-left: 10px;
+  background: #0b2c51;
+  color: white;
+  font-size: large;
+  border: 0px;
+  font-weight: 600;
+}
+
+/* #display::placeholder{
+  color: rgb(115, 10, 115);
+} */
+.copy-button {
+  background: none;
+  border: none;
+  position: relative;
+}
+img{
+  width: 25px;
+}
+img:hover{
+  cursor: pointer;
+  color: rgb(147, 20, 107);
+}
+.input-container {
+  /* border: 2px solid white; */
+  width: 120%;
+  border-radius: 20px;
+  margin-top: 30px;
+  padding: 20px 30px 20px 20px;
+  background: #07192d;
+}
+.pswd-container {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pswd-length-text {
+font-size: x-large;
+font-weight: 800;
+letter-spacing: 2px;
+color: aquamarine;
+}
+.pswd-length-number {
+  font-size: x-large;
+  font-weight: 800;
+  color: yellow;
+}
+.slider-container {
+  margin: 20px 0px;
+}
+
+input[type = "range"]{
+  appearance: none;
+  width: 100%;
+  height: 15px;
+  background: #0b2c51;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type = "range"]::-webkit-slider-thumb{
+  appearance: none;
+  height: 30px;
+  width: 30px;
+  /* border: 1px solid white; */
+  border-radius: 50%;
+  background:aqua ;
+  cursor: pointer;
+}
+input[type = "range"]:focus{
+  outline: 2px solid aqua;
+}
+.check-box-container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.check{
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
+  margin-bottom: 8px;
+}
+
+input[type="checkbox"]{
+ appearance: none;
+ width: 20px;
+ height: 20px;
+ border: 1px solid #851054;
+ border-radius: 5px;
+ cursor: pointer;
+ position: relative;
+}
+
+input[type="checkbox"]:checked{
+  background: #851054;
+}
+
+input[type="checkbox"]:checked::before{
+  content: "✔";
+  position: absolute;
+  color: aliceblue;
+  left: 1px;
+  top: -2px;
+  font-size: large;
+  font-weight: 900;
+}
+
+label{
+  color: aliceblue;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.strength-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: larger;
+  color: white;
+  font-weight: 800;
+  margin: 20px 0px;
+
+}
+.generate-button-container {
+  width: 100%;
+  text-align: center;
+  border:none;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.generate-button{
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: 800;
+  font-size: larger;
+  border: none;
+  background: #851054;
+}
+
+.copy-mssg{
+  background-color: rgb(67, 2, 67);
+  border-radius: 10px;
+  color: yellow;
+  font-size: medium;
+  position: absolute;
+  text-align: center;
+  padding-top: 5px;
+  top: -40px;
+  left: 1px;
+  width: 80px;
+  height: 30px;
+  transition: all 250ms ease-in-out;
+  /* scale: 0; */
+  transform: scale(0);
+}
+.active{
+  /* scale: 1; */
+  transform: scale(1);
+}
